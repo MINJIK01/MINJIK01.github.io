@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minji Kim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-name" href="#about">Minji Kim</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <p class="hero-name">Minji<br><em>Kim</em></p>
+          <p class="hero-role">MS in Artificial Intelligence · Sungkyunkwan University</p>
+          <div class="affil-tags">
+            <span class="tag">AIRI Lab</span>
+            <span class="tag">NLP</span>
+            <span class="tag">LLM Memory</span>
+            <span class="tag">Knowledge Graphs</span>
+          </div>
+          <p class="hero-bio">
+            I am a graduate researcher working on memory and reasoning in large language models.
+            My current focus is on constructing hierarchical memory trajectories in LLMs and
+            improving complex reasoning for knowledge graph question answering.
+            I am also passionate about building AI systems that feel human — from webtoon chatbots
+            to AI companions.
+          </p>
+          <div class="hero-links">
+            <a class="btn btn-primary" href="mailto:kmjj7864@gmail.com">✉ Email me</a>
+            <a class="btn btn-outline" href="https://github.com/MINJIK01" target="_blank">GitHub</a>
+            <a class="btn btn-outline" href="#publications">Publications</a>
+          </div>
+        </div>
+        <div class="avatar-col">
+          <div class="avatar-wrap">
+            <img class="avatar-img" src="profile.jpeg" alt="Minji Kim" />
+            <!-- <span class="avatar-initials">MK</span> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+    <div class="container">
+      <p class="section-label">Publications</p>
+      <div class="pub-list fade-in">
+
+        <div class="pub-item">
+          <div class="pub-year">2025</div>
+          <div>
+            <span class="pub-venue findings">ACL 2025 Findings</span>
+            <p class="pub-title">
+              Enhancing Complex Reasoning in Knowledge Graph Question Answering
+              through Query Graph Approximation
+            </p>
+            <p class="pub-authors">
+              Hongjun Jeong*, <strong>Minji Kim*</strong>, Heesoo Jung, Ko Keun Kim, Hogun Park
+              <br><span style="font-size:12px; color:#999;">* equal contribution</span>
+            </p>
+            <div class="pub-links">
+              <a class="pub-link" href="https://aclanthology.org/2025.findings-acl.1387/">Paper →</a>
+              <a class="pub-link" href="https://github.com/HongjunJeongSKKU/Aqua-QA">Code →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <p class="section-label">Projects</p>
+      <div class="proj-grid fade-in">
+
+        <div class="proj-card">
+          <span class="proj-emoji">💬</span>
+          <span class="proj-award">🥈 2nd Place · AI Competition</span>
+          <p class="proj-title">Toonteract</p>
+          <p class="proj-desc">LLM-powered webtoon character chatbot platform using multimodal image and text data for immersive reader experiences.</p>
+          <div class="proj-tech">
+            <span class="tech-chip">LLM</span>
+            <span class="tech-chip">Multimodal</span>
+            <span class="tech-chip">Chatbot</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <span class="proj-emoji">🧠</span>
+          <p class="proj-title">LLM Memory Trajectory</p>
+          <p class="proj-desc">Developing novel approaches for constructing hierarchical memory trajectories in large language models. (Ongoing MS thesis)</p>
+          <div class="proj-tech">
+            <span class="tech-chip">LLM</span>
+            <span class="tech-chip">Memory</span>
+            <span class="tech-chip">NLP</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <span class="proj-emoji">⚡</span>
+          <p class="proj-title">Electricity Demand Forecasting</p>
+          <p class="proj-desc">Built models predicting electricity demand per 5 minutes using ARIMA, SARIMA, and LSTM with meteorological features.</p>
+          <div class="proj-tech">
+            <span class="tech-chip">LSTM</span>
+            <span class="tech-chip">ARIMA</span>
+            <span class="tech-chip">Time Series</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <span class="proj-emoji">📈</span>
+          <p class="proj-title">Stock Prediction · ARGO</p>
+          <p class="proj-desc">Stock prediction using AutoRegression with Google search trend data. Compared ARGO model against multiple baselines.</p>
+          <div class="proj-tech">
+            <span class="tech-chip">ARGO</span>
+            <span class="tech-chip">Google Trends</span>
+            <span class="tech-chip">Web Scraping</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <span class="proj-emoji">🎌</span>
+          <p class="proj-title">Anime Recommendation System</p>
+          <p class="proj-desc">Content-based filtering recommendation system built by scraping reader taste data from Laftel, a Korean anime streaming platform.</p>
+          <div class="proj-tech">
+            <span class="tech-chip">Recommendation</span>
+            <span class="tech-chip">Web Scraping</span>
+            <span class="tech-chip">Python</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <p class="section-label">Education</p>
+      <div class="edu-list fade-in">
+
+        <div class="edu-item">
+          <div class="edu-year">2024<br>–<br>Present</div>
+          <div>
+            <p class="edu-degree">Master of Science in Engineering <span class="edu-badge">Artificial Intelligence</span></p>
+            <p class="edu-school">Sungkyunkwan University · Seoul, South Korea</p>
+            <p class="edu-detail">
+              Researching memory trajectories in LLMs and knowledge graph question answering.<br>
+              Member of Learn Data Lab.
+            </p>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-year">2020<br>–<br>2024</div>
+          <div>
+            <p class="edu-degree">Bachelor of Economics and Engineering</p>
+            <p class="edu-school">Sungkyunkwan University · Seoul, South Korea</p>
+            <p class="edu-detail">
+              Double major in Statistics and Computer Science & Engineering.<br>
+              GPA 4.17 / 4.50 · Magna Cum Laude · Scholarship for Academic Excellence (Spring 2021)<br>
+              Certificates: ADSP, SQLD
+            </p>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-year">2022<br>–<br>2023</div>
+          <div>
+            <p class="edu-degree">Exchange Student Program</p>
+            <p class="edu-school">University of Sheffield · Sheffield, United Kingdom</p>
+            <p class="edu-detail">
+              Computer Science modules: Text Processing, Speech Processing, Data Driven Computing, Web and Internet Technology.<br>
+              Participated in Korean–English language exchange (Tandem Program).
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <p class="section-label">Contact</p>
+      <h2>Let's connect.</h2>
+      <p style="font-size:15px; font-weight:300; color:#666; margin-bottom:36px; max-width:440px;">
+        I'm open to research collaborations, internship opportunities, and general conversations about AI.
+      </p>
+      <div class="contact-grid fade-in">
+        <a class="contact-item" href="mailto:kmjj7864@gmail.com">
+          <div class="contact-icon">✉</div>
+          <div>
+            <p class="contact-label">Email</p>
+            <p class="contact-val">kmjj7864@gmail.com</p>
+          </div>
+        </a>
+        <a class="contact-item" href="https://github.com/MINJIK01" target="_blank">
+          <div class="contact-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">GitHub</p>
+            <p class="contact-val">MINJIK01</p>
+          </div>
+        </a>
+        <div class="contact-item" style="cursor:default;">
+          <div class="contact-icon">📍</div>
+          <div>
+            <p class="contact-label">Location</p>
+            <p class="contact-val">Yangju-si, Gyeonggi-do, South Korea</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      © 2026 Minji Kim · Built with GitHub Pages
+    </div>
+  </footer>
+
+  <script>
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+  </script>
+
+</body>
+</html>
