@@ -128,3 +128,10 @@ $$('[data-copy], [data-copy-from]').forEach((b) => b.onclick = () => {
     toast.t = setTimeout(() => toast.classList.remove('show'), 1600);
   });
 });
+
+// Live demo modal (iframe loads only while open)
+const demo = $('.demo-modal'), demoFrame = demo.querySelector('iframe');
+$$('[data-demo]').forEach((b) => b.onclick = () => { demoFrame.src = b.dataset.demo; demo.showModal(); });
+demo.querySelector('.demo-close').onclick = () => demo.close();
+demo.onclick = (e) => { if (e.target === demo) demo.close(); };
+demo.onclose = () => { demoFrame.src = 'about:blank'; };
