@@ -360,7 +360,7 @@ h2 {
 
 .proj-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 .proj-card {
@@ -628,7 +628,7 @@ footer {
   .hero-grid { grid-template-columns: 1fr; }
   .avatar-col { justify-content: flex-start; order: -1; }
   .avatar-wrap { width: 100px; height: 100px; }
-  .contact-grid { grid-template-columns: 1fr; }
+  .contact-grid, .proj-grid { grid-template-columns: 1fr; }
   nav { padding: 0 12px; }
   .nav-name { display: none; }
   .nav-right { flex: 1; justify-content: space-between; gap: 12px; }
