@@ -133,7 +133,10 @@
             <span class="tech-chip">ARKit Blendshapes</span>
             <span class="tech-chip">Vercel</span>
           </div>
-          <a class="pub-link proj-link" href="https://emotion-face-drab.vercel.app/" target="_blank">Live Demo →</a>
+          <div class="proj-links">
+            <button class="pub-link proj-link" data-demo="https://emotion-face-drab.vercel.app/">Try it here ▶</button>
+            <a class="pub-link proj-link" href="https://emotion-face-drab.vercel.app/" target="_blank">Open in new tab ↗</a>
+          </div>
         </div>
 
         <div class="proj-card" data-cat="llm">
@@ -287,6 +290,15 @@
 
   <button class="icon-btn to-top" aria-label="Back to top">↑</button>
   <div class="toast" role="status"></div>
+
+  <dialog class="demo-modal" aria-label="Emotion Face live demo">
+    <div class="demo-bar">
+      <span>Emotion Face · Live Demo</span>
+      <a class="pub-link" href="https://emotion-face-drab.vercel.app/" target="_blank">Open in new tab ↗</a>
+      <button class="icon-btn demo-close" aria-label="Close demo">✕</button>
+    </div>
+    <iframe title="Emotion Face demo"></iframe>
+  </dialog>
 
   <script src="main.js?v=2"></script>
 

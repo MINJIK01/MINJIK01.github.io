@@ -422,7 +422,8 @@ h2 {
   display: inline-block;
   margin-bottom: 8px;
 }
-.proj-link { display: inline-block; margin-top: 14px; position: relative; }
+.proj-links { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 14px; }
+.proj-link { position: relative; }
 .proj-tech { display: flex; flex-wrap: wrap; gap: 5px; }
 .tech-chip {
   font-size: 11px;
@@ -585,6 +586,27 @@ footer {
 }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
 
+/* --- DEMO MODAL --- */
+.demo-modal {
+  width: min(1200px, 94vw); height: min(820px, 90vh);
+  margin: auto; padding: 0;
+  border: 1px solid var(--gray-light);
+  border-radius: 10px;
+  background: var(--white);
+  color: var(--black);
+  overflow: hidden;
+}
+.demo-modal[open] { display: flex; flex-direction: column; animation: pop 0.3s both; }
+.demo-modal::backdrop { background: rgba(0,0,0,0.55); backdrop-filter: blur(4px); }
+.demo-bar {
+  display: flex; align-items: center; gap: 16px;
+  padding: 10px 12px 10px 18px;
+  border-bottom: 1px solid var(--gray-light);
+  font-size: 13px;
+}
+.demo-bar span { flex: 1; font-weight: 500; }
+.demo-modal iframe { flex: 1; width: 100%; border: 0; background: var(--gray-bg); }
+
 /* --- REVEAL (staggered) --- */
 .fade-in > * {
   --dl: calc(var(--i, 0) * 90ms);
@@ -616,6 +638,7 @@ footer {
   .edu-list { --tl: 60px; }
   .edu-item { gap: 32px; }
   .to-top { right: 16px; bottom: 16px; }
+  .demo-modal { width: 100vw; height: 100dvh; max-width: none; max-height: none; border: 0; border-radius: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
